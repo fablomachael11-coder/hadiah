@@ -1,28 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Pesan Untuk Kamu</title>
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<div class="container">
-
-<h1>Pesan Untuk Kamu 💌</h1>
-
-<p class="message">
-Apa pun yang sedang kamu hadapi sekarang,
+const message = `Apa pun yang sedang kamu hadapi sekarang,
 aku harap kamu tetap kuat.
 
 Kamu lebih hebat dari yang kamu pikirkan.
 Jangan menyerah ya.
 
-Aku selalu percaya kamu bisa melewati semuanya 🌻
-</p>
+Aku selalu percaya kamu bisa melewati semuanya 🌻`;
 
-</div>
+let i = 0;
 
-</body>
-</html>
+function typing(){
+if(i < message.length){
+document.getElementById("text").innerHTML += message.charAt(i);
+i++;
+setTimeout(typing,40);
+}
+}
+
+typing();
