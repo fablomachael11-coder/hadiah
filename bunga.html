@@ -3,30 +3,119 @@
 <head>
 <meta charset="UTF-8">
 <title>Bunga Untuk Kamu</title>
-<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+background:linear-gradient(135deg,#ffd6e7,#ffeaf4);
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+height:100vh;
+font-family:Arial;
+}
+
+h1{
+color:#ff2e63;
+margin-bottom:40px;
+}
+
+/* bunga */
+
+.flower{
+position:relative;
+width:200px;
+height:200px;
+}
+
+.petal{
+position:absolute;
+width:80px;
+height:80px;
+background:#ff4d6d;
+border-radius:50%;
+opacity:0;
+animation:bloom 2s forwards;
+}
+
+.petal:nth-child(1){
+top:0;
+left:60px;
+animation-delay:0.3s;
+}
+
+.petal:nth-child(2){
+left:120px;
+top:60px;
+animation-delay:0.6s;
+}
+
+.petal:nth-child(3){
+top:120px;
+left:60px;
+animation-delay:0.9s;
+}
+
+.petal:nth-child(4){
+left:0;
+top:60px;
+animation-delay:1.2s;
+}
+
+.center{
+position:absolute;
+top:70px;
+left:70px;
+width:60px;
+height:60px;
+background:#ffd166;
+border-radius:50%;
+opacity:0;
+animation:bloom 2s forwards 1.5s;
+}
+
+@keyframes bloom{
+from{
+transform:scale(0);
+opacity:0;
+}
+
+to{
+transform:scale(1);
+opacity:1;
+}
+}
+
+button{
+margin-top:40px;
+padding:14px 30px;
+border:none;
+border-radius:25px;
+background:#ff2e63;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+</style>
+
 </head>
 
-<body class="center">
+<body>
 
-<h1 class="title">Bunga Ini Untuk Kamu 🌸</h1>
+<h1>Bunga Ini Untuk Kamu 🌸</h1>
 
-<svg viewBox="0 0 200 200" class="flower">
-
-<path class="line"
-d="M100 150 
-C80 120,60 120,80 90
-C60 80,80 60,100 80
-C120 60,140 80,120 90
-C140 120,120 120,100 150"/>
-
-<path class="line" d="M100 150 L100 190"/>
-
-</svg>
-
-<br>
+<div class="flower">
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="center"></div>
+</div>
 
 <a href="pesan.html">
-<button class="btn">Ada Pesan Untuk Kamu 💌</button>
+<button>Buka Pesan 💌</button>
 </a>
 
 </body>
