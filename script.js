@@ -1,20 +1,28 @@
-const text = `Dulu ada yang ngomong,
-semua bakal baik baik aja.
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pesan Untuk Kamu</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
-Dan ya aku percaya ke kamu cla.
-Kamu juga bakal baik baik juga cla.
+<body>
 
-Sehat sehat ya clarista.
-jangan lupa doa juga 🌻`;
+<div class="container">
 
-let i = 0;
+<h1>Pesan Untuk Kamu 💌</h1>
 
-function typeWriter(){
-if(i < text.length){
-document.getElementById("typing").innerHTML += text.charAt(i);
-i++;
-setTimeout(typeWriter,40);
-}
-}
+<p class="message">
+Apa pun yang sedang kamu hadapi sekarang,
+aku harap kamu tetap kuat.
 
-typeWriter();
+Kamu lebih hebat dari yang kamu pikirkan.
+Jangan menyerah ya.
+
+Aku selalu percaya kamu bisa melewati semuanya 🌻
+</p>
+
+</div>
+
+</body>
+</html>
