@@ -1,0 +1,75 @@
+body{
+background:linear-gradient(135deg,#ffd6e7,#ffeaf4);
+font-family: 'Segoe UI', sans-serif;
+margin:0;
+}
+
+.center{
+text-align:center;
+padding-top:80px;
+}
+
+.title{
+color:#ff2e63;
+font-size:32px;
+}
+
+.subtitle{
+color:#444;
+margin-bottom:30px;
+}
+
+.spotify{
+width:320px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.btn{
+margin-top:30px;
+padding:14px 28px;
+border:none;
+border-radius:25px;
+background:#ff2e63;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+background:#ff004c;
+}
+
+/* bunga */
+
+.flower{
+width:220px;
+margin:auto;
+}
+
+.line{
+fill:none;
+stroke:#ff2e63;
+stroke-width:3;
+stroke-dasharray:400;
+stroke-dashoffset:400;
+animation:draw 4s forwards;
+}
+
+@keyframes draw{
+to{
+stroke-dashoffset:0;
+}
+}
+
+/* pesan */
+
+.message{
+max-width:600px;
+margin:auto;
+font-size:20px;
+line-height:1.7;
+color:#333;
+}
