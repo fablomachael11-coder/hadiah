@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Bunga Untuk Kamu</title>
+<title>Mawar Untuk Kamu</title>
 
 <style>
 
@@ -14,73 +14,106 @@ align-items:center;
 justify-content:center;
 height:100vh;
 font-family:Arial;
+overflow:hidden;
 }
 
 h1{
 color:#ff2e63;
-margin-bottom:40px;
+margin-bottom:50px;
+}
+
+/* batang */
+
+.stem{
+width:6px;
+height:150px;
+background:#2e7d32;
+position:relative;
+margin:auto;
+}
+
+/* daun */
+
+.leaf{
+width:40px;
+height:20px;
+background:#2e7d32;
+position:absolute;
+border-radius:20px;
+}
+
+.leaf.left{
+left:-35px;
+top:70px;
+transform:rotate(-30deg);
+}
+
+.leaf.right{
+right:-35px;
+top:100px;
+transform:rotate(30deg);
 }
 
 /* bunga */
 
-.flower{
+.rose{
 position:relative;
-width:200px;
-height:200px;
+width:120px;
+height:120px;
+margin:auto;
+animation:bloom 3s ease forwards;
 }
 
 .petal{
 position:absolute;
 width:80px;
 height:80px;
-background:#ff4d6d;
+background:#ff2e63;
 border-radius:50%;
 opacity:0;
-animation:bloom 2s forwards;
 }
 
-.petal:nth-child(1){
+.p1{
+top:20px;
+left:20px;
+animation:petal 1s forwards 0.5s;
+}
+
+.p2{
 top:0;
-left:60px;
-animation-delay:0.3s;
+left:40px;
+animation:petal 1s forwards 1s;
 }
 
-.petal:nth-child(2){
-left:120px;
-top:60px;
-animation-delay:0.6s;
-}
-
-.petal:nth-child(3){
-top:120px;
-left:60px;
-animation-delay:0.9s;
-}
-
-.petal:nth-child(4){
+.p3{
+top:40px;
 left:0;
-top:60px;
-animation-delay:1.2s;
+animation:petal 1s forwards 1.5s;
+}
+
+.p4{
+top:40px;
+left:60px;
+animation:petal 1s forwards 2s;
 }
 
 .center{
 position:absolute;
-top:70px;
-left:70px;
-width:60px;
-height:60px;
-background:#ffd166;
+top:40px;
+left:40px;
+width:40px;
+height:40px;
+background:#ff1744;
 border-radius:50%;
 opacity:0;
-animation:bloom 2s forwards 1.5s;
+animation:petal 1s forwards 2.5s;
 }
 
-@keyframes bloom{
+@keyframes petal{
 from{
 transform:scale(0);
 opacity:0;
 }
-
 to{
 transform:scale(1);
 opacity:1;
@@ -88,7 +121,7 @@ opacity:1;
 }
 
 button{
-margin-top:40px;
+margin-top:50px;
 padding:14px 30px;
 border:none;
 border-radius:25px;
@@ -98,20 +131,29 @@ font-size:16px;
 cursor:pointer;
 }
 
+button:hover{
+background:#ff004c;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<h1>Bunga Ini Untuk Kamu 🌸</h1>
+<h1>Mawar Ini Untuk Kamu 🌹</h1>
 
-<div class="flower">
-<div class="petal"></div>
-<div class="petal"></div>
-<div class="petal"></div>
-<div class="petal"></div>
+<div class="rose">
+<div class="petal p1"></div>
+<div class="petal p2"></div>
+<div class="petal p3"></div>
+<div class="petal p4"></div>
 <div class="center"></div>
+</div>
+
+<div class="stem">
+<div class="leaf left"></div>
+<div class="leaf right"></div>
 </div>
 
 <a href="pesan.html">
