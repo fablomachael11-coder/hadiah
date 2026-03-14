@@ -1,11 +1,11 @@
-const text = `Jika hari ini terasa berat,
-ingat bahwa kamu tidak sendirian.
+const text = `Dulu ada yang ngomong,
+semua bakal baik baik aja.
 
-Kamu lebih kuat dari yang kamu pikirkan.
-Tetaplah berjalan walaupun pelan.
+Dan ya aku percaya ke kamu cla.
+Kamu juga bakal baik baik juga cla.
 
-Aku percaya kamu bisa melewati semuanya.
-Tetap semangat ya 🌻`;
+Sehat sehat ya clarista.
+jangan lupa doa juga 🌻`;
 
 let i = 0;
 
