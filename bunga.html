@@ -3,162 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <title>Mawar Untuk Kamu</title>
-
-<style>
-
-body{
-background:linear-gradient(135deg,#ffd6e7,#ffeaf4);
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-height:100vh;
-font-family:Arial;
-overflow:hidden;
-}
-
-h1{
-color:#ff2e63;
-margin-bottom:50px;
-}
-
-/* batang */
-
-.stem{
-width:6px;
-height:150px;
-background:#2e7d32;
-position:relative;
-margin:auto;
-}
-
-/* daun */
-
-.leaf{
-width:40px;
-height:20px;
-background:#2e7d32;
-position:absolute;
-border-radius:20px;
-}
-
-.leaf.left{
-left:-35px;
-top:70px;
-transform:rotate(-30deg);
-}
-
-.leaf.right{
-right:-35px;
-top:100px;
-transform:rotate(30deg);
-}
-
-/* bunga */
-
-.rose{
-position:relative;
-width:120px;
-height:120px;
-margin:auto;
-animation:bloom 3s ease forwards;
-}
-
-.petal{
-position:absolute;
-width:80px;
-height:80px;
-background:#ff2e63;
-border-radius:50%;
-opacity:0;
-}
-
-.p1{
-top:20px;
-left:20px;
-animation:petal 1s forwards 0.5s;
-}
-
-.p2{
-top:0;
-left:40px;
-animation:petal 1s forwards 1s;
-}
-
-.p3{
-top:40px;
-left:0;
-animation:petal 1s forwards 1.5s;
-}
-
-.p4{
-top:40px;
-left:60px;
-animation:petal 1s forwards 2s;
-}
-
-.center{
-position:absolute;
-top:40px;
-left:40px;
-width:40px;
-height:40px;
-background:#ff1744;
-border-radius:50%;
-opacity:0;
-animation:petal 1s forwards 2.5s;
-}
-
-@keyframes petal{
-from{
-transform:scale(0);
-opacity:0;
-}
-to{
-transform:scale(1);
-opacity:1;
-}
-}
-
-button{
-margin-top:50px;
-padding:14px 30px;
-border:none;
-border-radius:25px;
-background:#ff2e63;
-color:white;
-font-size:16px;
-cursor:pointer;
-}
-
-button:hover{
-background:#ff004c;
-}
-
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<div class="card">
+
 <h1>Mawar Ini Untuk Kamu 🌹</h1>
 
-<div class="rose">
-<div class="petal p1"></div>
-<div class="petal p2"></div>
-<div class="petal p3"></div>
-<div class="petal p4"></div>
-<div class="center"></div>
-</div>
+<div class="rose">🌹</div>
 
-<div class="stem">
-<div class="leaf left"></div>
-<div class="leaf right"></div>
-</div>
+<br>
 
 <a href="pesan.html">
 <button>Buka Pesan 💌</button>
 </a>
+
+</div>
 
 </body>
 </html>
